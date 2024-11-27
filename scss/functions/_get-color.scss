@@ -13,9 +13,11 @@
   {
     $color: map.get(map.get($colors, $type), $level);
 
-    @warn #{$color};
+    // @warn #{$color};
 
-    @return #{$color};
+    // @return #{$color};
+
+    @return $color;
   } @else {
     @warn 'Invalid color type or level';
 
